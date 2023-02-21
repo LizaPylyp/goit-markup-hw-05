@@ -633,8 +633,27 @@ cursor: pointer;
     background: #FFFFFF;
 border-radius: 0px 0px 4px 4px;
 padding: 32px 16px;
+}
+.hero-papka{
+    position: relative;
+    overflow: hidden;
 
-
+}
+.animation{
+    position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+background: #4D5AE5;
+padding-left: 24px;
+padding-right: 24px;
+padding-top: 63px;
+padding-bottom: 63px;
+transform: translateY(+100%) ;
+margin-top: 5px;
+display: block;
 
 }
 .papka{
@@ -644,6 +663,25 @@ margin-bottom: 48px;
 margin-right: 22px;
 cursor: pointer;
 }
+.papka:hover .ngshka{
+    transform: translateY(0%);   
+}
+.animation__text-animation{
+width: 322px;
+height: 168px;
+left: 239px;
+top: 323px;
+font-family: sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* or 156% */
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+} 
 .papka:last-child {
     background: #FFFFFF;
 border: 1px solid #E7E9FC;
@@ -674,261 +712,26 @@ border: 1px solid #E7E9FC;
 margin-bottom: 0;
 margin-right: 22px;
 }
-
 .papka:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-
-.papka1__app{
-    width: 360px;
-height: 300px;
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(4074365);
-background-blend-mode: soft-light, normal;
-mix-blend-mode: normal;
-
-}
-.papka1__title{
+.papka__title{
 font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 color: #2E2F42;
 }
-.papka1__text{
+.papka__text{
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 color: #434455;
-margin-top: 8px;
-}
-.papka2{
-    background: #FFFFFF;
-border: 1px solid #E7E9FC;
-margin-bottom: 48px;
-margin-right: 24px;
-}
-.papka2__pay{
-    width: 360px;
-height: 300px;
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(4);
-background-blend-mode: soft-light, normal;
-mix-blend-mode: normal;
-}
-.papka2__title{
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-color: #2E2F42;
-}
-.papka2__text{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #434455;
-margin-top: 8px;
-}
-.papka3{
-    background: #FFFFFF;
-border: 1px solid #E7E9FC;
-margin-bottom: 48px;
-}
-
-.papka3__notebook{
-    width: 360px;
-height: 300px;
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(tp238-pf-s73-05-mockup);
-mix-blend-mode: normal;
-}
-.papka3__title{
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-color: #2E2F42;
-}
-.papka3__text{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #434455;
-margin-top: 8px;
-}
-.papka4{
-    background: #FFFFFF;
-border: 1px solid #E7E9FC;
-list-style-type: none;
-margin-bottom: 48px;
-margin-right: 24px;
-
-}
-.papka4__taxi{
-    width: 360px;
-height: 300px;
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(female-taxi-driver-paying-attention-road);
-background-blend-mode: soft-light, normal;
-}
-.papka4__title{
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-color: #2E2F42;
-}
-.papka4__text{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #434455;
-margin-top: 8px;
-}
-.papka5{
-    background: #FFFFFF;
-border: 1px solid #E7E9FC;
-list-style-type: none;
-margin-bottom: 48px;
-margin-right: 24px;
-}
-.papka5__screen{
-    width: 360px;
-height: 300px;
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2105.w026.n002.440B.p0.440);
-background-blend-mode: soft-light, normal;
-mix-blend-mode: normal;
-}
-.papka5__title{
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-color: #2E2F42;
-}
-.papka5__text{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #434455;
-margin-top: 8px;
-}
-.papka6{
-    background: #FFFFFF;
-border: 1px solid #E7E9FC;
-list-style-type: none;
-margin-bottom: 48px;
-}
-.papka6__woman{
-    width: 360px;
-    height: 300px;
-    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(charming-short-haired-lady-gray-hat-standing-beside-wall-with-smartphone);
-    background-blend-mode: soft-light, normal;
-    mix-blend-mode: normal;
-}
-.papka6__title{
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-color: #2E2F42;
-}
-.papka6__text{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #434455;
-margin-top: 8px;
-}
-.papka7{
-    background: #FFFFFF;
-border: 1px solid #E7E9FC;
-list-style-type: none;
-margin-bottom: 120px;
-margin-right: 24px;
-}
-.papka7__stories{
-    width: 360px;
-    height: 300px;
-    background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(6418424.jpg);
-    background-blend-mode: soft-light, normal;
-}
-.papka7__title{
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-color: #2E2F42;
-}
-.papka7__text{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #434455;
-margin-top: 8px;
-}
-.papka8{
-    background: #FFFFFF;
-border: 1px solid #E7E9FC;
-list-style-type: none;
-margin-bottom: 120px;
-margin-right: 24px;
-}
-.papka8__food{
-    width: 360px;
-height: 300px;
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(pexels-photo-7262897);
-background-blend-mode: soft-light, normal;
-mix-blend-mode: normal;
-}
-.papka8__title{
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-color: #2E2F42;
-}
-.papka8__text{
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-color: #434455;
-margin-top: 8px;
-}
-.papka9{
-    background: #FFFFFF;
-border: 1px solid #E7E9FC;
-list-style-type: none;
-margin-bottom: 120px;
-}
-.papka9__coffee{
-    width: 360px;
-height: 300px;
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(pexels-chevanon-photography-302897);
-background-blend-mode: soft-light, normal;
-mix-blend-mode: normal;
-}
-.papka9__title{
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-color: #2E2F42;
-}
-.papka9__text{
-color: #2E2F42;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
 margin-top: 8px;
 }
 body{
-font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 margin: 0;
 }
 .menu-span{
@@ -1217,3 +1020,267 @@ fill: #AFB1B8;
 .client6:hover{
     fill: #404BBF;
 }
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    }
+    .modal{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        min-height: 581px;
+        min-width: 528px;
+        left: 50%;
+        top: 50%;
+        border-radius: 4px;
+        background-color: #FFFFFF; 
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);  
+    display: block; 
+    }
+    .forma{
+        display:grid;
+        }
+        .forma__tutor{
+            width: 448px;
+        height: 23px;
+        left: 576px;
+        top: 261px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin-top: 2px;
+        margin-left: 40px;
+        margin-right: 40px;
+        }
+        .name__fr{
+            width: 22px;
+            height: 14px;
+            left: 576px;
+            top: 296px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+            color: #757575;
+            margin-left: 40px;
+            margin-top: 12px;
+            margin-bottom: 4px;
+        }
+        .conect__pol{
+            width: 58px;
+            height: 14px;
+            left: 576px;
+            top: 364px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+            color: #757575;
+           margin-left: 40px; 
+           margin-top: 10px;
+           margin-bottom: 4px;
+        }
+        .forma__hp12{
+            width: 448px;
+            height: 40px;
+            left: 0;
+            top: 0;
+            padding-left: 42px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            position: relative;
+            margin-left: 40px;
+            outline: none;
+        }
+        
+        .forma__hp12:focus+ .forma__person{
+        fill: #2196F3;
+        outline: none;
+        }
+        .forma__len:focus + .forma__telefon{
+            fill: #2196F3;
+            outline: none; 
+        }
+        .forma__macb:focus+ .forma__poshta{
+            fill: #2196F3;
+        outline: none;
+        }
+        .forma__macb{
+            width: 448px;
+            height: 40px;
+            left: 0;
+            top: 0;
+        padding-left: 42px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            position: relative;
+            margin-left: 40px;
+            outline: none;
+        }
+        .forma__macb:focus{
+            border: 1px solid #2196F3; 
+        }
+        .forma__len{
+            width: 448px;
+            height: 40px;
+            left: 0;
+            top: 0;
+            padding-left: 42px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            position: relative;
+            margin-left: 40px;
+            outline: none;
+        }
+        .forma__len:focus{
+            border: 1px solid #2196F3; 
+        }
+        .forma__blb{
+            width: 448px;
+            height: 120px;
+            left: 576px;
+            top: 518px;
+            outline: none;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            padding-left: 16px;
+            padding-top: 12px;
+            margin-left: 40px;
+        }
+        .forma__blb:focus{
+            border: 1px solid #2196F3; 
+        }
+        .forma__person{
+            width: 12px;
+        height: 12px;
+        transform: translateY(-26px);
+        position: absolute;
+        outline: none;
+        left: 28px;
+        top: 84px;
+        display: inline-block;
+        }
+        .forma__hp12:focus{
+            border: 1px solid #2196F3;  
+        }
+        .forma__telefon{
+            width: 13px;
+        height: 13px;
+        left: 28px;
+        transform: translateY(-27px);
+        position: absolute;
+        top: 114px;
+        outline: none;
+        }
+        .forma__poshta{
+            width: 15px;
+        height: 12px;
+        left: 29px;
+        transform: translateY(-26px);
+        position: absolute;
+        top: 142px;
+        outline: none;
+        }
+        .coments__chi{
+            width: 41px;
+            height: 14px;
+            left: 576px;
+            top: 432px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+            color: #757575;
+            margin-left: 40px; 
+            margin-top: 10px;
+            margin-bottom: 4px;
+         } 
+        
+        .conect__ita{
+            width: 41px;
+            height: 14px;
+            left: 576px;
+            top: 432px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+            color: #757575;
+            margin-left: 40px; 
+           margin-top: 10px;
+           margin-bottom: 4px;
+        }
+        .hobby{
+            margin-top: 20px;
+            margin-left: 52px;
+            margin-bottom: 30px;
+        }
+        .value1{
+            width: 400.62px;
+            height: 24px;
+            left: 612.38px;
+            top: 658px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            color: #757575;
+        }
+        .hobby__links{
+            width: 400.62px;
+            height: 24px;
+            left: 612.38px;
+            top: 658px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            margin-left: 5px;
+            color: #2196F3;
+        }
+        .forma__telefon:focus{
+            fill: #2196F3;
+            outline: none;
+        }
+        .closer{
+            width: 30px;
+        height: 30px;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        margin-top: 8px;
+        margin-left: 490px;
+        }
+        .button-modal{
+            width: 200px;
+        height: 50px;
+        left: 700px;
+        top: 712px;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin-left: 164px;
+        margin-right: 164px;
+        }
+        .title-modal{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        margin-left: 46px;
+        
+        }
